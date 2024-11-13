@@ -18,7 +18,7 @@ from AvaliacaoTIVIT import app
 
 
 
-@app.route('/')
+#@app.route('/')
 @app.route('/home')
 def home():
     """Renders the home page."""
@@ -50,7 +50,7 @@ def about():
 
 
 
-#@app.route('/')
+@app.route('/')
 @app.route('/login')
 def login():           
     return render_template(

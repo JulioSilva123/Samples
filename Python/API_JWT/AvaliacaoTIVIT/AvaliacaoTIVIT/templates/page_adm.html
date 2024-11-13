@@ -20,16 +20,35 @@
 <p>Email: {{ model.data.email }}</p>
 
 <hr />
-<p>purchases</p>
+<p>Reports (relatórios)</p>
 <hr />
 
-{% for item in model.data.reports %}
-<p>{{ item.id }}</p>
-<p>{{ item.title }}</p>
-<p>{{ item.status }}</p>
-<hr />
-{% endfor %}
+<p>
+    <table border="1">
+        <tr>
+            <td>ID</td>
+            <td>Title</td>
+            <td>Status </td>
+        </tr>
 
+
+
+        {% for item in model.data.reports %}
+        <tr>
+
+            <td>{{ item.id }}</td>
+            <td>{{ item.title }}</td>
+            <td>{{ item.status }}</td>
+        </tr>
+
+        {% endfor %}
+
+
+    </table>
+
+
+
+</p>
 
 
 

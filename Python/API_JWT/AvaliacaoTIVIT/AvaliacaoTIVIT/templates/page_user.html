@@ -4,7 +4,7 @@
 
 
 {% block content %}
- 
+
 
 
 <div class="jumbotron">
@@ -21,17 +21,36 @@
 <p>Email: {{ model.data.email }}</p>
 
 <hr />
-<p>purchases</p>
+<p>Purchases (compras)</p>
 <hr />
 
-{% for item in model.data.purchases %}
-<p>{{ item.id }}</p>
-<p>{{ item.item }}</p>
-<p>{{ item.price }}</p>
-<hr />
-{% endfor %}
+
+<p>
+    <table border="1">
+        <tr>
+            <td>ID</td>
+            <td>Item</td>
+            <td>Price (Valor)</td>
+        </tr>
 
 
+
+        {% for item in model.data.purchases %}
+        <tr>
+          
+            <td>{{ item.id }}</td>
+            <td>{{ item.item }}</td>
+            <td>{{ item.price }}</td>
+        </tr>
+      
+        {% endfor %}
+
+
+    </table>
+
+
+
+</p>
 
 
 
