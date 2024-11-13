@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+
+
+
+{% block content %}
+<h2>{{ title }}.</h2>
+<h3>{{ message }}</h3>
+
+
+
+
+
+<p>Nome: {{ model.data.name }}</p>
+<p>Email: {{ model.data.email }}</p>
+
+<hr />
+<p>purchases</p>
+<hr />
+
+{% for item in model.data.purchases %}
+<p>{{ item.id }}</p>
+<p>{{ item.item }}</p>
+<p>{{ item.price }}</p>
+<hr />
+{% endfor %}
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,8 @@
+﻿################################################################################
+# Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
+################################################################################
+
+/Python/API_JWT/AvaliacaoTIVIT/AvaliacaoTIVIT/templates/page_user - Copy (2).html
+/Python/API_JWT/AvaliacaoTIVIT/AvaliacaoTIVIT/templates/page_user - Copy.html
+/Python/API_JWT/AvaliacaoTIVIT/.env
+/Python/API_JWT/AvaliacaoTIVIT/.env.template
