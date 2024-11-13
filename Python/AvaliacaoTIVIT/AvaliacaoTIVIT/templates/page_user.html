@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+
+
+
+{% block content %}
+
+
+
+<div class="jumbotron">
+    <h1>{{ title }}</h1>
+    <p class="lead">{{ message }}</p>
+</div>
+
+
+
+
+
+
+<p>Nome: {{ model.data.name }}</p>
+<p>Email: {{ model.data.email }}</p>
+
+<hr />
+<p>Purchases (compras)</p>
+<hr />
+
+
+<p>
+    <table border="1">
+        <tr>
+            <td>ID</td>
+            <td>Item</td>
+            <td>Price (Valor)</td>
+        </tr>
+
+
+
+        {% for item in model.data.purchases %}
+        <tr>
+          
+            <td>{{ item.id }}</td>
+            <td>{{ item.item }}</td>
+            <td>{{ item.price }}</td>
+        </tr>
+      
+        {% endfor %}
+
+
+    </table>
+
+
+
+</p>
+
+
+
+{% endblock %}
