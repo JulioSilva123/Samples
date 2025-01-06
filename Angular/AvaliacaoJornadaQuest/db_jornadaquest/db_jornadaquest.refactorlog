@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="2e184449-a3f0-4f59-80bd-589921fe34f7" ChangeDateTime="01/05/2025 21:53:12">
+    <Property Name="ElementName" Value="[dbo].[pessoas].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[pessoas]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="id_pessoa" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8f8a5789-156f-4c77-9ac0-bbce80dad897" ChangeDateTime="01/05/2025 21:53:49">
+    <Property Name="ElementName" Value="[dbo].[rodadas].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[rodadas]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="id_rodada" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6d2d10d5-6254-4ea5-b701-5a15a5645110" ChangeDateTime="01/05/2025 21:55:38">
+    <Property Name="ElementName" Value="[dbo].[rodadas].[cs_aberta]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[rodadas]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="id_status_roda" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5546d7a4-0b0d-4aba-ba2f-a3735f2f765e" ChangeDateTime="01/05/2025 21:55:41">
+    <Property Name="ElementName" Value="[dbo].[rodadas].[id_status_roda]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[rodadas]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="id_status_rodada" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="dd0e6c45-8d3c-4f4f-9a7a-edbf3de13e43" ChangeDateTime="01/05/2025 21:56:27">
+    <Property Name="ElementName" Value="[dbo].[status_rodada].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[status_rodada]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="id_status_rodada" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e32407e0-adcc-49b4-992f-0ce00a7f1e82" ChangeDateTime="01/05/2025 21:58:57">
+    <Property Name="ElementName" Value="[dbo].[itens_rodada].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[itens_rodada]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="id_item_rodada" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="dc5be49f-a0f7-4e79-9bfb-4c89bad33caa" ChangeDateTime="01/05/2025 21:59:30">
+    <Property Name="ElementName" Value="[dbo].[itens_rodada].[nr_conexao]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[itens_rodada]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ui_conexao" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a8e119dd-5710-4293-8686-e6fde0b9ab26" ChangeDateTime="01/05/2025 22:04:03">
+    <Property Name="ElementName" Value="[dbo].[itens_rodada_clicks].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[itens_rodada_clicks]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="id_item_rodada_click" />
+  </Operation>
+</Operations>
