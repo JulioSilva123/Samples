@@ -7,17 +7,7 @@ namespace GameJornadaQuest.Server.Hubs
 {
 
 
-    //public interface IRodadasHubClient
-    //{
-    //    //Task SendOffersToUser(List<string> message);
-    //    Task SendMsg(string test);
-
-    //    Task leave(bool stopCalled);
-
-    //}
-
-
-
+ 
 
     [HubName("RodadasHub")]
     public class RodadasHub : Hub //<IRodadasHubClient>
@@ -61,47 +51,6 @@ namespace GameJornadaQuest.Server.Hubs
             await Clients.Group(groupName).SendAsync("saiuDaRodada", userName, groupName);
         }
 
-        //public async Task AddRodada(Rodadas[] rooms)
-        //{
-        //    await Clients.All.SendAsync("AddRodada", rooms);
-        //}
-
-
-
-
-
-
-        //this.hubConService.hubConnection
-        //  .invoke('JoinToRodada', this.pessoa.idPessoa, this.rodada.idRodada)
-        //  .catch(err => console.log('JoinToRodada :', err));
-
-        //this.hubConService.hubConnection.on('JoinedRodada', async(pessoa: Pessoa, rodada: Rodada) => {
-        //  const text = pessoa.nmPessoa + ' Entrou na Rodada ' + rodada.idRodada;
-
-        //  //console.log(text);
-
-        //  this.messages.push(text);
-        //});
-
-        //this.hubConService.hubConnection.on('messagedToGroup', async (pessoa: Pessoa, receivedMessage) => {
-        //    const text = pessoa.nmPessoa + ': ' + receivedMessage;
-        //    this.messages.push(text);
-        //});
-
-        //this.hubConService.hubConnection.on('saiuDoGroup', async (pessoa: Pessoa , rodada: Rodada) => {
-        //    const text = pessoa.nmPessoa + ' saiu na Rodada ' + rodada.idRodada;
-        //    console.log(text);
-        //    this.messages.push(text);
-        //});
-
-
-
-
-
-
-
-
-
-
+         
     }
 }
